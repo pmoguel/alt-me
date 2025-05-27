@@ -5,6 +5,7 @@ import { translations, type Language } from '../i18n/translations';
 import { currentLanguage } from '../i18n/store';
 import LanguageToggle from './LanguageToggle';
 import NavLinks from './NavLinks';
+import MobileMenu from './MobileMenu';
 
 const lang = currentLanguage.get() as Language;
 const t = translations[lang];
@@ -16,7 +17,14 @@ const t = translations[lang];
       <Image src={logo} alt="Fanatico Perr1 Logo" class="h-8 w-auto" />
     </a>
     <div class="flex items-center space-x-8">
-      <NavLinks client:load />
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <NavLinks client:load />
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <MobileMenu client:load />
+      </div>
       <LanguageToggle client:load />
     </div>
   </nav>
