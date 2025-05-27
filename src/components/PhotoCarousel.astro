@@ -1,0 +1,104 @@
+---
+interface Props {
+  images: {
+    src: string;
+    alt: string;
+  }[];
+}
+
+const { images } = Astro.props;
+---
+
+<div class="relative w-full max-w-4xl mx-auto">
+  <div class="carousel-container overflow-hidden rounded-lg shadow-lg">
+    <div class="carousel-track flex transition-transform duration-500 ease-in-out">
+      {images.map((image, index) => (
+        <div class="carousel-slide min-w-full">
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="w-full h-[500px] object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+  
+  <button
+    class="carousel-button prev absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+    aria-label="Previous image"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </button>
+  
+  <button
+    class="carousel-button next absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+    aria-label="Next image"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18l6-6-6-6"/>
+    </svg>
+  </button>
+</div>
+
+<script>
+  class Carousel {
+    private track: HTMLElement;
+    private slides: HTMLElement[];
+    private currentIndex: number;
+    private prevButton: HTMLElement;
+    private nextButton: HTMLElement;
+
+    constructor() {
+      this.track = document.querySelector('.carousel-track')!;
+      this.slides = Array.from(document.querySelectorAll('.carousel-slide'));
+      this.currentIndex = 0;
+      this.prevButton = document.querySelector('.carousel-button.prev')!;
+      this.nextButton = document.querySelector('.carousel-button.next')!;
+
+      this.init();
+    }
+
+    private init() {
+      this.prevButton.addEventListener('click', () => this.slide('prev'));
+      this.nextButton.addEventListener('click', () => this.slide('next'));
+    }
+
+    private slide(direction: 'prev' | 'next') {
+      if (direction === 'prev') {
+        this.currentIndex = this.currentIndex === 0 ? this.slides.length - 1 : this.currentIndex - 1;
+      } else {
+        this.currentIndex = this.currentIndex === this.slides.length - 1 ? 0 : this.currentIndex + 1;
+      }
+
+      this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+    }
+  }
+
+  // Initialize carousel when the DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    new Carousel();
+  });
+</script>
+
+<style>
+  .carousel-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: 100%;
+  }
+
+  .carousel-slide {
+    flex: 0 0 100%;
+  }
+
+  .carousel-button {
+    z-index: 10;
+  }
+</style> 

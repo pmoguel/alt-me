@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PhotoCarousel from '../components/PhotoCarousel.astro';
+
+// Example images - replace these with your actual images
+const images = [
+  {
+    src: "/images/photo1.jpg",
+    alt: "Descripción de la foto 1"
+  },
+  {
+    src: "/images/photo2.jpg",
+    alt: "Descripción de la foto 2"
+  },
+  {
+    src: "/images/photo3.jpg",
+    alt: "Descripción de la foto 3"
+  }
+];
+---
+
+<Layout title="Fotografías | Fanático Perr1">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold mb-8">Fotografías</h1>
+    <PhotoCarousel images={images} />
+  </div>
+</Layout> 
