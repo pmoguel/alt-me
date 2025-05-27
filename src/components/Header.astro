@@ -1,9 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
+import { translations, type Language } from '../i18n/translations';
+import { currentLanguage } from '../i18n/store';
+import LanguageToggle from './LanguageToggle';
+import NavLinks from './NavLinks';
+
+const lang = currentLanguage.get() as Language;
+const t = translations[lang];
+---
+
 <header class="w-full py-4 px-6 bg-white shadow-sm">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
-    <a href="/" class="text-xl font-bold">Fanatico Perr1</a>
-    <div class="space-x-6">
-      <a href="/work" class="hover:text-gray-600 transition-colors">Proyectos</a>
-      <a href="https://pmoguel.github.io/Mis-links/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 transition-colors">Mis Links</a>
+    <a href="/" class="flex items-center">
+      <Image src={logo} alt="Fanatico Perr1 Logo" class="h-8 w-auto" />
+    </a>
+    <div class="flex items-center space-x-8">
+      <NavLinks client:load />
+      <LanguageToggle client:load />
     </div>
   </nav>
-</header> 
+</header>
+
+<script>
+  import { setLanguage } from '../i18n/store';
+
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const currentLang = langToggle.getAttribute('data-current-lang');
+      const newLang = currentLang === 'es' ? 'en' : 'es';
+      setLanguage(newLang);
+      window.location.reload();
+    });
+  }
+</script> 

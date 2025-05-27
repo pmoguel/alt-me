@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import PhotoCarousel from '../components/PhotoCarousel.astro';
+import PhotosContent from '../components/PhotosContent';
 
 // Example images - replace these with your actual images
 const images = [
@@ -20,8 +20,5 @@ const images = [
 ---
 
 <Layout title="Fotografías | Fanático Perr1">
-  <div class="max-w-7xl mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold mb-8">Fotografías</h1>
-    <PhotoCarousel images={images} />
-  </div>
+  <PhotosContent client:load />
 </Layout> 

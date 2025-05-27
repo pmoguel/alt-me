@@ -1,0 +1,39 @@
+import { useEffect, useState } from 'react';
+import { translations, type Language } from '../i18n/translations';
+import { currentLanguage } from '../i18n/store';
+
+export default function WorkContent() {
+  const [lang, setLang] = useState<Language>('es');
+  const t = translations[lang];
+
+  useEffect(() => {
+    const unsubscribe = currentLanguage.subscribe((value) => {
+      setLang(value);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  return (
+    <div className="max-w-7xl mx-auto px-6 py-12">
+      <h1 className="text-4xl font-bold mb-8">{t.pages.work.title}</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <a href="/photos" className="group relative overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105">
+          <div className="aspect-w-16">
+            <img
+              src="/images/photo-preview.jpg"
+              alt={t.pages.work.photoProject.title}
+              className="w-full h-full"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+            <div className="text-white">
+              <h2 className="text-2xl font-bold mb-2">{t.pages.work.photoProject.title}</h2>
+              <p className="text-sm opacity-90">{t.pages.work.photoProject.description}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
+} 

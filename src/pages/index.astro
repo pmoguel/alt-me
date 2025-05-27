@@ -1,10 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import AboutContent from '../components/AboutContent';
+import { translations, type Language } from '../i18n/translations';
+import { currentLanguage } from '../i18n/store';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const lang = currentLanguage.get() as Language;
+const t = translations[lang];
 ---
 
-<Layout>
-	<h1>Hello World</h1>
+<Layout title="fanatico perr1">
+	<AboutContent client:load />
 </Layout>
