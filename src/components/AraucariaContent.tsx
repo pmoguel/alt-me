@@ -77,6 +77,12 @@ export default function AraucariaContent() {
             <p className="font-mono">{t.pages.work.animationProject.technicalDetails.camera}: Canon EOS 80D</p>
             <p className="font-mono">{t.pages.work.animationProject.technicalDetails.lens}: Canon EF-S 18-55mm f/3.5-5.6</p>
           </div>
+          <a 
+            href="/behind-scenes-araucaria" 
+            className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-fuchsia-700 to-yellow-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            {t.pages.work.animationProject.behindTheScenes}
+          </a>
         </div>
         <div className="md:w-1/2 flex items-center justify-center">
           <PhotoCarousel images={images} />

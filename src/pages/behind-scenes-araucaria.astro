@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BehindTheScenesLayout from '../components/BehindTheScenesLayout';
+import { translations } from '../i18n/translations';
+import { currentLanguage } from '../i18n/store';
+
+const lang = currentLanguage.get();
+const t = translations[lang];
+---
+
+<Layout title={`${t.pages.work.animationProject.title} - ${t.pages.work.animationProject.behindTheScenes}`}>
+  <BehindTheScenesLayout
+    title={t.pages.work.animationProject.title}
+    subtitle={t.pages.work.animationProject.behindTheScenes}
+    images={[
+      {
+        src: "/images/araucaria/bts/bts1.jpg",
+        alt: "Behind the Scenes - Araucaria 1",
+        title: "Setup de la cámara"
+      },
+      {
+        src: "/images/araucaria/bts/bts2.jpg",
+        alt: "Behind the Scenes - Araucaria 2",
+        title: "Referencia de día"
+      },
+      {
+        src: "/images/araucaria/bts/bts3.jpg",
+        alt: "Behind the Scenes - Araucaria 3",
+        title: "Referencia de noche"
+      },
+      {
+        src: "/images/araucaria/bts/bts4.jpg",
+        alt: "Behind the Scenes - Araucaria 4",
+        title: "Referencia del cielo"
+      }
+    ]}
+  />
+</Layout> 

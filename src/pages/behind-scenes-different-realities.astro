@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BehindTheScenesLayout from '../components/BehindTheScenesLayout';
+import { translations } from '../i18n/translations';
+import { currentLanguage } from '../i18n/store';
+
+const lang = currentLanguage.get();
+const t = translations[lang];
+---
+
+<Layout title={`${t.pages.work.photoProject.title} - ${t.pages.work.photoProject.behindTheScenes}`}>
+  <BehindTheScenesLayout
+    title={t.pages.work.photoProject.title}
+    subtitle={t.pages.work.photoProject.behindTheScenes}
+    images={[
+      {
+        src: "/images/different-realities/bts/bts1.jpg",
+        alt: "Behind the Scenes - Different Realities 1",
+        title: "Proceso de Edición"
+      },
+      {
+        src: "/images/different-realities/bts/bts2.jpg",
+        alt: "Behind the Scenes - Different Realities 2",
+        title: "Captura en Videojuego"
+      },
+      {
+        src: "/images/different-realities/bts/bts3.jpg",
+        alt: "Behind the Scenes - Different Realities 3",
+        title: "Impresión de Fotos"
+      },
+      {
+        src: "/images/different-realities/bts/bts4.jpg",
+        alt: "Behind the Scenes - Different Realities 4",
+        title: "Recorte y Montaje"
+      }
+    ]}
+  />
+</Layout> 
