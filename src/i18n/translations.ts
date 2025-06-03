@@ -19,11 +19,33 @@ export const translations = {
         title: 'Proyectos',
         photoProject: {
           title: 'Distinas Realidades',
+          subtitle: 'Fotografía I',
           description: 'Proyecto de Fotografía - Primer Semestre',
+          technicalDetails: {
+            capturedWith: 'Capturado con',
+            camera: 'Cámara',
+            lens: 'Lente'
+          },
+          content: {
+            paragraph1: 'En este proyecto se combina la realidad con lo virtual para contrastar las aspiraciones de muchas personas con la cruda realidad que se vive en México. Bastan diez minutos caminando para encontrar una gran cantidad de vehículos maltratados y abandonados. Por otro lado, en los espacios virtuales como son los videojuegos, muchos encuentran un escape, un lugar donde pueden comprar y manejar cientos de supercarros. En este proyecto también podemos ver el consumismo que sucede en este país y la desigualdad que existe.',
+            paragraph2: 'Buscando reflexionar sobre este contraste, originalmente tomé fotografías de supercarros dentro de un videojuego. Estas fotos las imprimí y les recorté ciertas partes, las cuales llené con carros que encontré en las calles cerca de mi casa.',
+            paragraph3: 'El proyecto nos enseña un poco de cómo nos relacionamos con nuestro entorno y los escapes virtuales que utilizamos para evadir la realidad.'
+          }
         },
         animationProject: {
-          title: 'Animación Final',
-          description: 'Proyecto de Animación - Segundo Semestre',
+          title: 'Araucaria',
+          subtitle: 'Fotografía II',
+          description: 'Proyecto de Fotografía - Segundo Semestre',
+          content: {
+            paragraph1: 'Este proyecto explora la relación entre la naturaleza y la urbanización a través de la lente de la Araucaria, un árbol icónico que ha sido testigo del desarrollo de la ciudad. Las fotografías capturan la coexistencia de estos árboles centenarios con el entorno urbano moderno, creando un diálogo visual entre lo natural y lo construido.',
+            paragraph2: 'La Araucaria, con su forma distintiva y su historia en la región, sirve como metáfora de la resistencia y adaptación. A través de diferentes perspectivas y momentos del día, el proyecto busca documentar cómo estos árboles han logrado mantener su presencia y significado en un entorno que cambia constantemente.',
+            paragraph3: 'Cada imagen cuenta una historia de supervivencia y belleza, invitando al espectador a reflexionar sobre la importancia de preservar estos elementos naturales en nuestro entorno urbano.'
+          },
+          technicalDetails: {
+            capturedWith: 'Capturado con',
+            camera: 'Cámara',
+            lens: 'Lente'
+          }
         },
         objectProject: {
           title: 'Objeto y Espacio',
@@ -100,11 +122,33 @@ export const translations = {
         title: 'Projects',
         photoProject: {
           title: 'Different Realities',
+          subtitle: 'Photography I',
           description: 'Photography Project - First Semester',
+          technicalDetails: {
+            capturedWith: 'Captured with',
+            camera: 'Camera',
+            lens: 'Lens'
+          },
+          content: {
+            paragraph1: 'This project combines reality with the virtual to contrast people\'s aspirations with the harsh reality lived in Mexico. It only takes ten minutes of walking to find a large number of damaged and abandoned vehicles. On the other hand, in virtual spaces such as video games, many find an escape, a place where they can buy and drive hundreds of supercars. In this project, we can also see the consumerism that happens in this country and the inequality that exists.',
+            paragraph2: 'Seeking to reflect on this contrast, I originally took photographs of supercars within a video game. I printed these photos and cut out certain parts, which I filled with cars I found on the streets near my home.',
+            paragraph3: 'The project teaches us a bit about how we relate to our environment and the virtual escapes we use to evade reality.'
+          }
         },
         animationProject: {
-          title: 'Final Animation',
-          description: 'Animation Project - Second Semester',
+          title: 'Araucaria',
+          subtitle: 'Photography II',
+          description: 'Photography Project - Second Semester',
+          content: {
+            paragraph1: 'This project explores the relationship between nature and urbanization through the lens of the Araucaria, an iconic tree that has witnessed the city\'s development. The photographs capture the coexistence of these centennial trees with the modern urban environment, creating a visual dialogue between the natural and the built.',
+            paragraph2: 'The Araucaria, with its distinctive shape and history in the region, serves as a metaphor for resistance and adaptation. Through different perspectives and times of day, the project aims to document how these trees have managed to maintain their presence and significance in an ever-changing environment.',
+            paragraph3: 'Each image tells a story of survival and beauty, inviting the viewer to reflect on the importance of preserving these natural elements in our urban environment.'
+          },
+          technicalDetails: {
+            capturedWith: 'Captured with',
+            camera: 'Camera',
+            lens: 'Lens'
+          }
         },
         objectProject: {
           title: 'Object and Space',
