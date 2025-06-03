@@ -16,16 +16,14 @@ export default function NavLinks() {
 
   return (
     <div className="flex items-center space-x-6">
-      <a href="/work" className="hover:text-gray-600 transition-colors">
+      <a href="/work" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
         {t.nav.projects}
       </a>
-      <a
-        href="https://pmoguel.github.io/Mis-links/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-gray-600 transition-colors mr-4"
-      >
-        {t.nav.myLinks}
+      <a href="/game" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+        {t.nav.game}
+      </a>
+      <a href="/store" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+        {t.nav.store}
       </a>
     </div>
   );

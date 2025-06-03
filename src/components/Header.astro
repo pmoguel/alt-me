@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.svg';
+import logoDark from '../assets/logo-dark.svg';
 import { translations, type Language } from '../i18n/translations';
 import { currentLanguage } from '../i18n/store';
 import LanguageToggle from './LanguageToggle';
@@ -11,10 +12,11 @@ const lang = currentLanguage.get() as Language;
 const t = translations[lang];
 ---
 
-<header class="w-full py-4 px-6 bg-white shadow-sm">
+<header class="w-full py-4 px-6 bg-white dark:bg-gray-900 shadow-sm">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     <a href="/" class="flex items-center">
-      <Image src={logo} alt="Fanatico Perr1 Logo" class="h-8 w-auto" />
+      <Image src={logo} alt="Fanatico Perr1 Logo" class="h-8 w-auto dark:hidden" />
+      <Image src={logoDark} alt="Fanatico Perr1 Logo" class="h-8 w-auto hidden dark:block" />
     </a>
     <div class="flex items-center space-x-8">
       <!-- Desktop Navigation -->

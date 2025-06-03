@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Game from '../components/Game';
+import { translations, type Language } from '../i18n/translations';
+import { currentLanguage } from '../i18n/store';
+
+const lang = currentLanguage.get() as Language;
+const t = translations[lang];
+---
+
+<Layout title={t.pages.game.title}>
+  <Game client:load />
+</Layout> 
