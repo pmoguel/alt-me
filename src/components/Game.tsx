@@ -67,13 +67,13 @@ export default function Game() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 flex items-center md:items-start">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 items-center">
           {images.map((image) => (
             <div
               key={image.id}
-              className="cursor-pointer transform transition-transform hover:scale-105"
+              className="cursor-pointer transform transition-transform hover:scale-105 flex items-center justify-center"
               onMouseEnter={() => handleMouseEnter(image.id)}
               onMouseLeave={() => handleMouseLeave(image.id)}
             >

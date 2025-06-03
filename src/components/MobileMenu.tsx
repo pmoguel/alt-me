@@ -96,16 +96,16 @@ export default function MobileMenu() {
                 {t.nav.projects}
               </a>
               <a
-                href="/game"
+                href="/store"
                 className="text-2xl font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                {t.nav.game}
+                {t.nav.store}
               </a>
             </div>
 
             {/* Social Links */}
-            <div className="pb-8">
+            <div className="p-8 border-t dark:border-gray-700">
               <div className="flex justify-center space-x-6">
                 <a
                   href="https://www.instagram.com/patomogel"

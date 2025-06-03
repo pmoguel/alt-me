@@ -51,29 +51,20 @@ export const translations = {
       },
       store: {
         title: 'Tienda',
-        addToCart: 'Añadir al carrito',
-        cart: 'Carrito',
-        emptyCart: 'Tu carrito está vacío',
-        total: 'Total',
-        checkout: 'Proceder al pago',
-        processing: 'Procesando tu pedido...',
-        pleaseWait: 'Por favor espera, esto puede tomar un momento...',
+        comingSoon: 'Próximamente',
         products: {
           tshirt: {
-            name: 'Camiseta Fanático Perr1',
-            description: 'Camiseta de algodón 100% con el logo de Fanático Perr1',
-            price: 'USD $50,000',
+            name: 'Camiseta fanatico perr1',
+            description: 'Camiseta de algodón 100% con el logo de fanatico perr1'
           },
           hoodie: {
-            name: 'Sudadera Fanático Perr1',
-            description: 'Sudadera con capucha y el logo de Fanático Perr1',
-            price: 'USD $75,000',
+            name: 'Sudadera fanatico perr1',
+            description: 'Sudadera con capucha y el logo de fanatico perr1'
           },
           hat: {
-            name: 'Gorra Fanático Perr1',
-            description: 'Gorra ajustable con el logo de Fanático Perr1',
-            price: 'USD $35,000',
-          },
+            name: 'Gorra fanatico perr1',
+            description: 'Gorra ajustable con el logo de fanatico perr1'
+          }
         },
       },
     },
@@ -123,29 +114,20 @@ export const translations = {
       },
       store: {
         title: 'Store',
-        addToCart: 'Add to Cart',
-        cart: 'Cart',
-        emptyCart: 'Your cart is empty',
-        total: 'Total',
-        checkout: 'Checkout',
-        processing: 'Processing your order...',
-        pleaseWait: 'Please wait, this may take a moment...',
+        comingSoon: 'Coming Soon',
         products: {
           tshirt: {
-            name: 'Fanático Perr1 T-Shirt',
-            description: '100% cotton t-shirt with Fanático Perr1 logo',
-            price: 'USD $50,000',
+            name: 'fanatico perr1 T-Shirt',
+            description: '100% cotton t-shirt with fanatico perr1 logo'
           },
           hoodie: {
-            name: 'Fanático Perr1 Hoodie',
-            description: 'Hooded sweatshirt with Fanático Perr1 logo',
-            price: 'USD $75,000',
+            name: 'fanatico perr1 Hoodie',
+            description: 'Hooded sweatshirt with fanatico perr1 logo'
           },
           hat: {
-            name: 'Fanático Perr1 Hat',
-            description: 'Adjustable hat with Fanático Perr1 logo',
-            price: 'USD $35,000',
-          },
+            name: 'fanatico perr1 Hat',
+            description: 'Adjustable hat with fanatico perr1 logo'
+          }
         },
       },
     },

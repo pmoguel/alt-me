@@ -19,9 +19,16 @@ export default function AboutContent() {
       <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-fuchsia-700 to-yellow-500 bg-clip-text text-transparent">
         {t.pages.about.title}
       </h1>
-      <p className="text-lg text-gray-800 dark:text-gray-200 leading-relaxed">
+      <p className="text-lg text-gray-800 dark:text-gray-200 leading-relaxed mb-12">
         {t.pages.about.description}
       </p>
+      <div className="mt-8">
+        <img
+          src="/images/about-image.jpg"
+          alt="About me"
+          className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+        />
+      </div>
     </div>
   );
 } 

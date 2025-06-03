@@ -34,7 +34,7 @@ export default function WorkContent() {
           </div>
         </a>
 
-        <a href="/game" className="group relative overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105">
+        <div className="relative overflow-hidden rounded-lg shadow-lg">
           <div className="aspect-w-16">
             <img
               src="/images/game-preview.jpg"
@@ -48,7 +48,7 @@ export default function WorkContent() {
               <p className="text-sm opacity-90">{t.pages.work.animationProject.description}</p>
             </div>
           </div>
-        </a>
+        </div>
 
         <a href="#" className="group relative overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105">
           <div className="aspect-w-16">
@@ -66,7 +66,7 @@ export default function WorkContent() {
           </div>
         </a>
 
-        <a href="#" className="group relative overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105">
+        <a href="/" className="group relative overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105">
           <div className="aspect-w-16">
             <img
               src="/images/project4-preview.jpg"
