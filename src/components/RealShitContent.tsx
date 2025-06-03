@@ -62,16 +62,29 @@ export default function RealShitContent() {
               </p>
             </a>
             <a
-              href="https://www.instagram.com/patomogel"
+              href="https://www.instagram.com/pato.moguel"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
             >
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                Private Instagram
+                {t.pages.realShit.privateInstagram.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-300">
-                My personal Instagram account
+                {t.pages.realShit.privateInstagram.description}
+              </p>
+            </a>
+            <a
+              href="https://www.tiktok.com/@fanaticoperr1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                {t.pages.realShit.privateTikTok.title}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300">
+                {t.pages.realShit.privateTikTok.description}
               </p>
             </a>
           </div>

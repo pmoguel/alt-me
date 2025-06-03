@@ -75,7 +75,15 @@ export const translations = {
         passwordPlaceholder: 'Ingresa la contraseña',
         submitButton: 'Acceder',
         storeDescription: 'Accede a la tienda de fanatico perr1',
-        gameDescription: 'Juega el juego interactivo de fanatico perr1'
+        gameDescription: 'Juega el juego interactivo de fanatico perr1',
+        privateInstagram: {
+          title: 'Instagram Privado',
+          description: 'Mi cuenta personal de Instagram'
+        },
+        privateTikTok: {
+          title: 'TikTok Privado',
+          description: 'Mi cuenta personal de TikTok'
+        }
       },
     },
   },
@@ -148,7 +156,15 @@ export const translations = {
         passwordPlaceholder: 'Enter password',
         submitButton: 'Access',
         storeDescription: 'Access the fanatico perr1 store',
-        gameDescription: 'Play the fanatico perr1 interactive game'
+        gameDescription: 'Play the fanatico perr1 interactive game',
+        privateInstagram: {
+          title: 'Private Instagram',
+          description: 'My personal Instagram account'
+        },
+        privateTikTok: {
+          title: 'Private TikTok',
+          description: 'My personal TikTok account'
+        }
       },
     },
   },

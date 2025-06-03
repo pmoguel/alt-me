@@ -15,7 +15,7 @@ export default function AboutContent() {
   }, []);
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16 text-center">
+    <div className="max-w-3xl mx-auto px-6 py-16 pb-48 text-center">
       <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-fuchsia-700 to-yellow-500 bg-clip-text text-transparent">
         {t.pages.about.title}
       </h1>
@@ -23,10 +23,17 @@ export default function AboutContent() {
         {t.pages.about.description}
       </p>
       <div className="mt-8">
+        {/* Desktop image - hidden on mobile */}
         <img
-          src="/images/about-image.jpg"
+          src="/images/about-image-landscape.jpg"
           alt="About me"
-          className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+          className="hidden md:block w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+        />
+        {/* Mobile image - hidden on desktop */}
+        <img
+          src="/images/about-image-portrait.jpg"
+          alt="About me"
+          className="md:hidden w-full max-w-2xl mx-auto rounded-lg shadow-lg"
         />
       </div>
     </div>
