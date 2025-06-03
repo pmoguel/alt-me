@@ -12,6 +12,7 @@ export const translations = {
       myLinks: 'Mis Links',
       game: 'Juego Interactivo',
       store: 'Tienda',
+      realShit: 'Real Sh!t',
     },
     pages: {
       work: {
@@ -67,6 +68,15 @@ export const translations = {
           }
         },
       },
+      realShit: {
+        title: 'Real Sh!t',
+        subtitle: 'Ingresa la contraseña para acceder',
+        passwordLabel: 'Contraseña',
+        passwordPlaceholder: 'Ingresa la contraseña',
+        submitButton: 'Acceder',
+        storeDescription: 'Accede a la tienda de fanatico perr1',
+        gameDescription: 'Juega el juego interactivo de fanatico perr1'
+      },
     },
   },
   en: {
@@ -75,6 +85,7 @@ export const translations = {
       myLinks: 'My Links',
       game: 'Interactive Game',
       store: 'Store',
+      realShit: 'Real Sh!t',
     },
     pages: {
       work: {
@@ -129,6 +140,15 @@ export const translations = {
             description: 'Adjustable hat with fanatico perr1 logo'
           }
         },
+      },
+      realShit: {
+        title: 'Real Sh!t',
+        subtitle: 'Enter password to access',
+        passwordLabel: 'Password',
+        passwordPlaceholder: 'Enter password',
+        submitButton: 'Access',
+        storeDescription: 'Access the fanatico perr1 store',
+        gameDescription: 'Play the fanatico perr1 interactive game'
       },
     },
   },

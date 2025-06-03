@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { translations, type Language } from '../i18n/translations';
 import { currentLanguage } from '../i18n/store';
+import ProductModal from './ProductModal';
 
 interface Product {
   id: number;
@@ -11,6 +12,7 @@ interface Product {
 
 export default function StoreContent() {
   const [lang, setLang] = useState<Language>('es');
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const t = translations[lang];
 
   useEffect(() => {
@@ -54,7 +56,8 @@ export default function StoreContent() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col h-full"
+              onClick={() => setSelectedProduct(product)}
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col h-full cursor-pointer"
             >
               <div className="aspect-w-1 aspect-h-1 w-full flex items-center justify-center bg-gray-50 dark:bg-gray-700">
                 <img
@@ -63,23 +66,25 @@ export default function StoreContent() {
                   className="w-full h-full object-contain p-4"
                 />
               </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <div className="p-4 flex flex-col">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {product.name}
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  {product.description}
-                </p>
-                <div className="mt-auto">
-                  <span className="text-xl font-bold text-fuchsia-600 dark:text-fuchsia-400">
-                    {t.pages.store.comingSoon}
-                  </span>
-                </div>
+                <span className="text-xl font-bold text-fuchsia-600 dark:text-fuchsia-400 mt-2">
+                  {t.pages.store.comingSoon}
+                </span>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {selectedProduct && (
+        <ProductModal
+          isOpen={!!selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+          product={selectedProduct}
+        />
+      )}
     </div>
   );
 } 

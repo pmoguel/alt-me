@@ -96,11 +96,11 @@ export default function MobileMenu() {
                 {t.nav.projects}
               </a>
               <a
-                href="/store"
+                href="/realshit"
                 className="text-2xl font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                {t.nav.store}
+                {t.nav.realShit}
               </a>
             </div>
 
@@ -108,7 +108,7 @@ export default function MobileMenu() {
             <div className="p-8 border-t dark:border-gray-700">
               <div className="flex justify-center space-x-6">
                 <a
-                  href="https://www.instagram.com/patomogel"
+                  href="https://www.instagram.com/fanatico.perr1/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"

@@ -19,11 +19,8 @@ export default function NavLinks() {
       <a href="/work" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
         {t.nav.projects}
       </a>
-      <a href="/game" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-        {t.nav.game}
-      </a>
-      <a href="/store" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-        {t.nav.store}
+      <a href="/realshit" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+        {t.nav.realShit}
       </a>
     </div>
   );
