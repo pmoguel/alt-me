@@ -1,14 +1,36 @@
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
+@import url('https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Futura PT', sans-serif;
     font-weight: 700;
   }
+}
+
+/* Test class for Lacquer font */
+.font-lacquer {
+  font-family: 'Lacquer', cursive !important;
+  font-weight: 400 !important;
 }
 
 .aspect-w-16 {

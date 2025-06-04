@@ -97,7 +97,7 @@ export default function MobileMenu() {
               </a>
               <a
                 href="/realshit"
-                className="text-2xl font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                className="text-2xl font-lacquer hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {t.nav.realShit}

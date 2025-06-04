@@ -16,6 +16,11 @@ interface Props {
 const { title } = Astro.props;
 const lang = currentLanguage.get();
 const t = translations[lang];
+const currentPath = Astro.url.pathname;
+const isRealShitPage = currentPath === '/realshit';
+const isStorePage = currentPath === '/store';
+const isGamePage = currentPath === '/game';
+const isSpecialPage = isRealShitPage || isStorePage || isGamePage;
 ---
 
 <!DOCTYPE html>
@@ -34,10 +39,10 @@ const t = translations[lang];
 			}
 		</script>
 	</head>
-	<body class="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 pb-32">
+	<body class="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
 		<Preloader client:load />
 		<Header />
-		<main class="flex-grow pb-24 md:pb-8">
+		<main class={`flex-grow ${isSpecialPage ? '' : 'pb-24 md:pb-8'}`}>
 			<slot />
 		</main>
 		<Footer />

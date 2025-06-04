@@ -17,45 +17,52 @@ export default function DifferentRealitiesContent() {
 
   const images = [
     {
-      src: "/images/different-realities/photo1.jpg",
-      alt: "Different Realities Photo 1",
-      fullResSrc: "/images/different-realities/FOTO1.jpg"
+      src: '/images/different-realities/photo1.jpg',
+      alt: 'Different Realities Photo 1',
+      title: 'Different Realities 1',
+      fullResSrc: '/images/different-realities/FOTO1.jpg'
     },
     {
-      src: "/images/different-realities/photo2.jpg",
-      alt: "Different Realities Photo 2",
-      fullResSrc: "/images/different-realities/FOTO2.jpg"
+      src: '/images/different-realities/photo2.jpg',
+      alt: 'Different Realities Photo 2',
+      title: 'Different Realities 2',
+      fullResSrc: '/images/different-realities/FOTO2.jpg'
     },
     {
-      src: "/images/different-realities/photo3.jpg",
-      alt: "Different Realities Photo 3",
-      fullResSrc: "/images/different-realities/FOTO3.jpg"
+      src: '/images/different-realities/photo3.jpg',
+      alt: 'Different Realities Photo 3',
+      title: 'Different Realities 3',
+      fullResSrc: '/images/different-realities/FOTO3.jpg'
     },
     {
-      src: "/images/different-realities/photo4.jpg",
-      alt: "Different Realities Photo 4",
-      fullResSrc: "/images/different-realities/FOTO4.jpg"
+      src: '/images/different-realities/photo4.jpg',
+      alt: 'Different Realities Photo 4',
+      title: 'Different Realities 4',
+      fullResSrc: '/images/different-realities/FOTO4.jpg'
     },
     {
-      src: "/images/different-realities/photo5.jpg",
-      alt: "Different Realities Photo 5",
-      fullResSrc: "/images/different-realities/FOTO5.jpg"
+      src: '/images/different-realities/photo5.jpg',
+      alt: 'Different Realities Photo 5',
+      title: 'Different Realities 5',
+      fullResSrc: '/images/different-realities/FOTO5.jpg'
     },
     {
-      src: "/images/different-realities/photo6.jpg",
-      alt: "Different Realities Photo 6",
-      fullResSrc: "/images/different-realities/FOTO6.jpg"
+      src: '/images/different-realities/photo6.jpg',
+      alt: 'Different Realities Photo 6',
+      title: 'Different Realities 6',
+      fullResSrc: '/images/different-realities/FOTO6.jpg'
     },
     {
-      src: "/images/different-realities/photo7.jpg",
-      alt: "Different Realities Photo 7",
-      fullResSrc: "/images/different-realities/FOTO7.jpg"
+      src: '/images/different-realities/photo7.jpg',
+      alt: 'Different Realities Photo 7',
+      title: 'Different Realities 7',
+      fullResSrc: '/images/different-realities/FOTO7.jpg'
     }
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-4">
-      <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-fuchsia-700 to-yellow-500 bg-clip-text text-transparent text-center">
+    <div className="max-w-7xl mx-auto px-6 pt-32 pb-24 md:pt-24 md:pb-16">
+      <h1 className="text-4xl font-bold mb-2 text-fuchsia-300 dark:text-fuchsia-400 text-center">
         {t.pages.work.photoProject.title}
       </h1>
       <h2 className="text-xl text-gray-600 dark:text-gray-400 mb-6 text-center">
@@ -77,12 +84,6 @@ export default function DifferentRealitiesContent() {
             <p className="font-mono">{t.pages.work.photoProject.technicalDetails.camera}: Canon EOS 80D</p>
             <p className="font-mono">{t.pages.work.photoProject.technicalDetails.lens}: Canon EF-S 18-55mm f/3.5-5.6</p>
           </div>
-          <a 
-            href="/behind-scenes-different-realities" 
-            className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-fuchsia-700 to-yellow-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-          >
-            {t.pages.work.photoProject.behindTheScenes}
-          </a>
         </div>
         <div className="md:w-1/2 flex items-center justify-center">
           <PhotoCarousel images={images} />

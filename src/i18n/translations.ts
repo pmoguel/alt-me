@@ -10,7 +10,7 @@ export const translations = {
     nav: {
       projects: 'Proyectos',
       myLinks: 'Mis Links',
-      game: 'Juego Interactivo',
+      game: 'Juego',
       store: 'Tienda',
       realShit: 'Real Sh!t',
     },
@@ -50,11 +50,46 @@ export const translations = {
           behindTheScenes: 'Detrás de Cámaras'
         },
         objectProject: {
-          title: 'Objeto y Espacio',
-          description: 'Proyecto de Diseño - Segundo Semestre',
+          title: 'Cubos',
+          description: 'Objeto y Espacio',
+          images: {
+            image1: {
+              title: 'Cubo 1',
+              description: 'Descripción del primer cubo y su significado'
+            },
+            image2: {
+              title: 'Cubo 2',
+              description: 'Descripción del segundo cubo y su significado'
+            },
+            image3: {
+              title: 'Cubo 3',
+              description: 'Descripción del tercer cubo y su significado'
+            },
+            image4: {
+              title: 'Cubo 4',
+              description: 'Descripción del cuarto cubo y su significado'
+            },
+            image5: {
+              title: 'Cubo 5',
+              description: 'Descripción del quinto cubo y su significado'
+            },
+            image6: {
+              title: 'Cubo 6',
+              description: 'Descripción del sexto cubo y su significado'
+            },
+            image7: {
+              title: 'Cubo 7',
+              description: 'Descripción del séptimo cubo y su significado'
+            },
+            image8: {
+              title: 'Cubo 8',
+              description: 'Descripción del octavo cubo y su significado'
+            }
+          }
         },
         webProject: {
           title: 'Desarrollo y Diseño Web',
+          subtitle: 'Segundo Semestre',
           description: 'Proyecto de Programación - Segundo Semestre',
         },
       },
@@ -77,6 +112,7 @@ export const translations = {
       store: {
         title: 'Tienda',
         comingSoon: 'Próximamente',
+        followUs: 'Síguenos',
         products: {
           tshirt: {
             name: 'Camiseta fanatico perr1',
@@ -94,7 +130,7 @@ export const translations = {
       },
       realShit: {
         title: 'Real Sh!t',
-        subtitle: 'Ingresa la contraseña para acceder',
+        subtitle: 'Si me conoces, quien es el mejor rapero? (una palabra)',
         passwordLabel: 'Contraseña',
         passwordPlaceholder: 'Ingresa la contraseña',
         submitButton: 'Acceder',
@@ -115,7 +151,7 @@ export const translations = {
     nav: {
       projects: 'Projects',
       myLinks: 'My Links',
-      game: 'Interactive Game',
+      game: 'Game',
       store: 'Store',
       realShit: 'Real Sh!t',
     },
@@ -155,11 +191,46 @@ export const translations = {
           behindTheScenes: 'Behind the Scenes'
         },
         objectProject: {
-          title: 'Object and Space',
-          description: 'Design Project - Second Semester',
+          title: 'Cubes',
+          description: 'Object and Space',
+          images: {
+            image1: {
+              title: 'Cube 1',
+              description: 'Description of the first cube and its meaning'
+            },
+            image2: {
+              title: 'Cube 2',
+              description: 'Description of the second cube and its meaning'
+            },
+            image3: {
+              title: 'Cube 3',
+              description: 'Description of the third cube and its meaning'
+            },
+            image4: {
+              title: 'Cube 4',
+              description: 'Description of the fourth cube and its meaning'
+            },
+            image5: {
+              title: 'Cube 5',
+              description: 'Description of the fifth cube and its meaning'
+            },
+            image6: {
+              title: 'Cube 6',
+              description: 'Description of the sixth cube and its meaning'
+            },
+            image7: {
+              title: 'Cube 7',
+              description: 'Description of the seventh cube and its meaning'
+            },
+            image8: {
+              title: 'Cube 8',
+              description: 'Description of the eighth cube and its meaning'
+            }
+          }
         },
         webProject: {
           title: 'Web Development and Design',
+          subtitle: 'Second Semester',
           description: 'Programming Project - Second Semester',
         },
       },
@@ -177,11 +248,12 @@ export const translations = {
       },
       about: {
         title: 'fanatico perr1',
-        description: 'I am a creative computing student, passionate about technology and music. I enjoy watching sports and spending time with my friends. I am a very sociable person and my relationships define me a lot as a person.',
+        description: 'I am a creative computing student, passionate about technology and music. I enjoy watching sports and spending time with my friends. I am a very social person and my relationships define me a lot as a person.',
       },
       store: {
         title: 'Store',
         comingSoon: 'Coming Soon',
+        followUs: 'Follow Us',
         products: {
           tshirt: {
             name: 'fanatico perr1 T-Shirt',
@@ -199,7 +271,7 @@ export const translations = {
       },
       realShit: {
         title: 'Real Sh!t',
-        subtitle: 'Enter password to access',
+        subtitle: 'if u know me, who\'s the best rapper? (one word)',
         passwordLabel: 'Password',
         passwordPlaceholder: 'Enter password',
         submitButton: 'Access',

@@ -17,45 +17,52 @@ export default function AraucariaContent() {
 
   const images = [
     {
-      src: "/images/araucaria/photo1.jpg",
-      alt: "Araucaria Photo 1",
-      fullResSrc: "/images/araucaria/FOTO1.jpg"
+      src: '/images/araucaria/photo1.jpg',
+      alt: 'Araucaria 1',
+      title: 'Araucaria 1',
+      fullResSrc: '/images/araucaria/FOTO1.jpg'
     },
     {
-      src: "/images/araucaria/photo2.jpg",
-      alt: "Araucaria Photo 2",
-      fullResSrc: "/images/araucaria/FOTO2.jpg"
+      src: '/images/araucaria/photo2.jpg',
+      alt: 'Araucaria 2',
+      title: 'Araucaria 2',
+      fullResSrc: '/images/araucaria/FOTO2.jpg'
     },
     {
-      src: "/images/araucaria/photo3.jpg",
-      alt: "Araucaria Photo 3",
-      fullResSrc: "/images/araucaria/FOTO3.jpg"
+      src: '/images/araucaria/photo3.jpg',
+      alt: 'Araucaria 3',
+      title: 'Araucaria 3',
+      fullResSrc: '/images/araucaria/FOTO3.jpg'
     },
     {
-      src: "/images/araucaria/photo4.jpg",
-      alt: "Araucaria Photo 4",
-      fullResSrc: "/images/araucaria/FOTO4.jpg"
+      src: '/images/araucaria/photo4.jpg',
+      alt: 'Araucaria 4',
+      title: 'Araucaria 4',
+      fullResSrc: '/images/araucaria/FOTO4.jpg'
     },
     {
-      src: "/images/araucaria/photo5.jpg",
-      alt: "Araucaria Photo 5",
-      fullResSrc: "/images/araucaria/FOTO5.jpg"
+      src: '/images/araucaria/photo5.jpg',
+      alt: 'Araucaria 5',
+      title: 'Araucaria 5',
+      fullResSrc: '/images/araucaria/FOTO5.jpg'
     },
     {
-      src: "/images/araucaria/photo6.jpg",
-      alt: "Araucaria Photo 6",
-      fullResSrc: "/images/araucaria/FOTO6.jpg"
+      src: '/images/araucaria/photo6.jpg',
+      alt: 'Araucaria 6',
+      title: 'Araucaria 6',
+      fullResSrc: '/images/araucaria/FOTO6.jpg'
     },
     {
-      src: "/images/araucaria/photo7.jpg",
-      alt: "Araucaria Photo 7",
-      fullResSrc: "/images/araucaria/FOTO7.jpg"
+      src: '/images/araucaria/photo7.jpg',
+      alt: 'Araucaria 7',
+      title: 'Araucaria 7',
+      fullResSrc: '/images/araucaria/FOTO7.jpg'
     }
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-4">
-      <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-fuchsia-700 to-yellow-500 bg-clip-text text-transparent text-center">
+    <div className="max-w-7xl mx-auto px-6 pt-32 pb-24 md:pt-24 md:pb-16">
+      <h1 className="text-4xl font-bold mb-2 text-fuchsia-300 dark:text-fuchsia-400 text-center">
         {t.pages.work.animationProject.title}
       </h1>
       <h2 className="text-xl text-gray-600 dark:text-gray-400 mb-6 text-center">
@@ -79,7 +86,7 @@ export default function AraucariaContent() {
           </div>
           <a 
             href="/behind-scenes-araucaria" 
-            className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-fuchsia-700 to-yellow-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            className="inline-block mt-6 px-6 py-3 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-fuchsia-700 hover:text-white"
           >
             {t.pages.work.animationProject.behindTheScenes}
           </a>

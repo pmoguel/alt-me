@@ -8,7 +8,6 @@ interface BehindTheScenesLayoutProps {
   images: {
     src: string;
     alt: string;
-    fullResSrc?: string;
     title: string;
   }[];
 }
@@ -26,8 +25,8 @@ export default function BehindTheScenesLayout({ title, subtitle, images }: Behin
   }, []);
 
   return (
-    <div className="max-w-[1400px] mx-auto px-6 py-8 pb-24 md:pb-8">
-      <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-fuchsia-700 to-yellow-500 bg-clip-text text-transparent text-center">
+    <div className="max-w-[1400px] mx-auto px-6 pt-32 pb-24 md:pt-24 md:pb-8">
+      <h1 className="text-4xl font-bold mb-2 text-fuchsia-300 dark:text-fuchsia-400 text-center">
         {title}
       </h1>
       <h2 className="text-xl text-gray-600 dark:text-gray-400 mb-8 text-center">

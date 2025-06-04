@@ -17,7 +17,7 @@ export default function CartIcon() {
     <div className="relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 text-gray-600 dark:text-gray-300"
+        className="h-6 w-6 text-gray-600 dark:text-gray-400"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -30,7 +30,7 @@ export default function CartIcon() {
         />
       </svg>
       {itemCount > 0 && (
-        <span className="absolute -top-2 -right-2 bg-fuchsia-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+        <span className="absolute -top-2 -right-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center group-hover:bg-fuchsia-700 group-hover:text-white transition-colors">
           {itemCount}
         </span>
       )}

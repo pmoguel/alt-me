@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         'futura': ['Futura PT', 'sans-serif'],
+        'lacquer': ['Lacquer', 'cursive'],
       },
     },
   },

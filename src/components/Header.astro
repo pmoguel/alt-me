@@ -1,22 +1,29 @@
 ---
-import { Image } from 'astro:assets';
-import logo from '../assets/logo.svg';
-import logoDark from '../assets/logo-dark.svg';
 import { translations, type Language } from '../i18n/translations';
 import { currentLanguage } from '../i18n/store';
-import LanguageToggle from './LanguageToggle';
 import NavLinks from './NavLinks';
 import MobileMenu from './MobileMenu';
+import LanguageToggle from './LanguageToggle';
 
 const lang = currentLanguage.get() as Language;
 const t = translations[lang];
+const currentPath = Astro.url.pathname;
+const isRealShitPage = currentPath === '/realshit';
 ---
 
-<header class="w-full py-4 px-6 bg-white dark:bg-gray-900 shadow-sm">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center">
+<header class={`w-full py-4 px-6 fixed top-0 left-0 z-50 transition-all duration-300 ${isRealShitPage ? 'bg-transparent' : 'bg-white dark:bg-gray-900 shadow-sm'}`}>
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
     <a href="/" class="flex items-center">
-      <Image src={logo} alt="Fanatico Perr1 Logo" class="h-8 w-auto dark:hidden" />
-      <Image src={logoDark} alt="Fanatico Perr1 Logo" class="h-8 w-auto hidden dark:block" />
+      <img 
+        src="/images/logo.png" 
+        alt="Fanatico Perr1 Logo" 
+        class={`w-12 h-12 transition-all duration-300 dark:hidden ${isRealShitPage ? 'invert' : ''}`}
+      />
+      <img 
+        src="/images/logo.png" 
+        alt="Fanatico Perr1 Logo" 
+        class={`w-12 h-12 transition-all duration-300 hidden dark:block ${isRealShitPage ? 'invert' : 'invert'}`}
+      />
     </a>
     <div class="flex items-center space-x-8">
       <!-- Desktop Navigation -->
@@ -29,7 +36,7 @@ const t = translations[lang];
       </div>
       <LanguageToggle client:load />
     </div>
-  </nav>
+  </div>
 </header>
 
 <script>

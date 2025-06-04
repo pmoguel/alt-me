@@ -67,24 +67,22 @@ export default function Game() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 flex items-center md:items-start">
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 items-center">
-          {images.map((image) => (
-            <div
-              key={image.id}
-              className="cursor-pointer transform transition-transform hover:scale-105 flex items-center justify-center"
-              onMouseEnter={() => handleMouseEnter(image.id)}
-              onMouseLeave={() => handleMouseLeave(image.id)}
-            >
-              <img
-                src={hoveredId === image.id ? image.hoverImage : image.normalImage}
-                alt=""
-                className="w-full h-auto transition-opacity duration-300"
-              />
-            </div>
-          ))}
-        </div>
+    <div className="w-full">
+      <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 items-center">
+        {images.map((image) => (
+          <div
+            key={image.id}
+            className="cursor-pointer transform transition-transform hover:scale-105 flex items-center justify-center bg-white/5 backdrop-blur-sm rounded-[2rem_0_2rem_0] hover:rounded-[0_2rem_0_2rem] p-4 border border-white/10 hover:border-white/20"
+            onMouseEnter={() => handleMouseEnter(image.id)}
+            onMouseLeave={() => handleMouseLeave(image.id)}
+          >
+            <img
+              src={hoveredId === image.id ? image.hoverImage : image.normalImage}
+              alt=""
+              className="w-full h-auto transition-opacity duration-300"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

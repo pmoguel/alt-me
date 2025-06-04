@@ -45,38 +45,37 @@ export default function StoreContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-            {t.pages.store.title}
-          </h1>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <div
-              key={product.id}
-              onClick={() => setSelectedProduct(product)}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 flex flex-col h-full cursor-pointer"
-            >
-              <div className="aspect-w-1 aspect-h-1 w-full flex items-center justify-center bg-gray-50 dark:bg-gray-700">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-contain p-4"
-                />
-              </div>
-              <div className="p-4 flex flex-col">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  {product.name}
-                </h2>
-                <span className="text-xl font-bold text-fuchsia-600 dark:text-fuchsia-400 mt-2">
-                  {t.pages.store.comingSoon}
-                </span>
-              </div>
+    <div className="h-full flex flex-col">
+      <h1 className="text-5xl font-lacquer text-white mb-8 drop-shadow-lg tracking-wider text-center">
+        {t.pages.store.title}
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-1">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            onClick={() => setSelectedProduct(product)}
+            className="group bg-white/5 backdrop-blur-sm shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-[2rem_0_2rem_0] hover:rounded-[0_2rem_0_2rem] cursor-pointer"
+          >
+            <div className="aspect-square mb-4 overflow-hidden rounded-[1rem_0_1rem_0]">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
-          ))}
-        </div>
+            <div className="flex flex-col">
+              <h2 className="text-2xl font-lacquer text-white mb-2 drop-shadow-lg group-hover:scale-105 transition-transform">
+                {product.name}
+              </h2>
+              <p className="text-white/80 group-hover:text-white transition-colors">
+                {product.description}
+              </p>
+              <span className="text-orange-200 mt-4 font-lacquer">
+                {t.pages.store.comingSoon}
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
       {selectedProduct && (
         <ProductModal
