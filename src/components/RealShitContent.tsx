@@ -30,9 +30,9 @@ export default function RealShitContent() {
 
   if (isAuthenticated) {
     return (
-      <div className="relative h-[calc(100vh-8rem)] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+      <div className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-real-shit">
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
-        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col">
+        <div className="relative min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col">
           <h1 className="text-5xl font-lacquer text-white mb-8 drop-shadow-lg tracking-wider text-center">
             {t.pages.realShit.title}
           </h1>
@@ -121,9 +121,9 @@ export default function RealShitContent() {
   }
 
   return (
-    <div className="relative h-[calc(100vh-8rem)] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+    <div className="relative min-h-screen bg-cover bg-center bg-no-repeat bg-real-shit">
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
-      <div className="relative h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="relative min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8 bg-white/5 backdrop-blur-sm p-8 rounded-[2rem_0_2rem_0] border border-white/10">
           <div>
             <h2 className="mt-6 text-center text-4xl font-lacquer text-white drop-shadow-lg tracking-wider">

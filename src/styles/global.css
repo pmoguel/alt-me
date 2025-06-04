@@ -51,3 +51,20 @@
 div[class*="relative overflow-hidden rounded-lg shadow-lg"] {
   cursor: default !important;
 }
+
+/* Background Images */
+.bg-real-shit {
+  background-image: url('/bg-mobile.jpg');
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .bg-real-shit {
+    background-image: url('/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 200vh;
+    background-position: center top;
+  }
+}

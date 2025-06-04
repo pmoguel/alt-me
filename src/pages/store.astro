@@ -9,9 +9,9 @@ const t = translations[lang];
 ---
 
 <Layout title={t.pages.store.title}>
-  <div class="relative h-[calc(100vh-8rem)] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+  <div class="relative min-h-screen bg-cover bg-center bg-no-repeat bg-real-shit">
     <div class="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
-    <div class="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col">
+    <div class="relative min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col">
       <StoreContent client:load />
     </div>
   </div>
