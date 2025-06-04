@@ -119,24 +119,28 @@ const CubosContent: React.FC = () => {
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-4xl w-full"
+              className="bg-white dark:bg-gray-800 rounded-lg p-4 sm:p-6 max-w-[95vw] sm:max-w-2xl w-full"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
-              <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">{selectedImage.title}</h2>
-              <p className="mb-6 text-gray-600 dark:text-gray-400 whitespace-pre-line">{selectedImage.description}</p>
-              <div className="w-full">
+              <div className="bg-white dark:bg-gray-800">
+                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800 dark:text-gray-200">{selectedImage.title}</h2>
+                <p className="mb-4 sm:mb-6 text-sm sm:text-base text-gray-600 dark:text-gray-400 whitespace-pre-line">{selectedImage.description}</p>
+              </div>
+              <div className="w-full flex justify-center">
                 <img
                   src={selectedImage.images[0]}
                   alt={selectedImage.title}
-                  className="w-full h-auto rounded-lg"
+                  className="w-full max-w-[85vw] sm:max-w-xl h-auto rounded-lg shadow-lg"
                 />
               </div>
-              <button
-                onClick={closeModal}
-                className="mt-4 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-              >
-                {lang === 'es' ? 'Cerrar' : 'Close'}
-              </button>
+              <div className="bg-white dark:bg-gray-800 pt-3 sm:pt-4 mt-3 sm:mt-4 flex justify-center">
+                <button
+                  onClick={closeModal}
+                  className="px-4 sm:px-6 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors text-sm sm:text-base"
+                >
+                  {lang === 'es' ? 'Cerrar' : 'Close'}
+                </button>
+              </div>
             </motion.div>
           </motion.div>
         )}
