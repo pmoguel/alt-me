@@ -51,39 +51,39 @@ export const translations = {
         },
         objectProject: {
           title: 'Cubos',
-          description: 'Objeto y Espacio',
+          description: 'Una serie de composiciones creadas a partir de ligas y cubos.',
           images: {
             image1: {
-              title: 'Cubo 1',
-              description: 'Descripción del primer cubo y su significado'
+              title: 'Cubo 1: Repetición',
+              description: 'Siguiendo el concepto general de mis primeros cuatro cubos el cual es contraste, creare una composición a partir de ligas en la cual aprovechó el cubo para demostrar distintas formas de contraste, utilizando la repetición como herramienta. Para representar la repetición toda la composición estará creada a partir de acomodar las ligas de forma en la que estas creen un patrón, ya sea colocando ligas paralelas entre sí en una cara pero contrastando en cantidad y dirección con ligas en la cara opuesta del cubo. En otras dos caras del cubo haré contraste al crear curvas con las ligas.'
             },
             image2: {
-              title: 'Cubo 2',
-              description: 'Descripción del segundo cubo y su significado'
+              title: 'Cubo 2: Composición Balanceada',
+              description: 'Para este cubo busco crear un balance entre todos las caras sin olvidar el contraste. Utilizando un acercamiento minimalista puedo crear un contraste entre el espacio positivo y el negativo, por otro lado creando un contraste entre direcciones. Para darle balance a la composición me asegurare de que cada cara tenga exactamente los mismos elementos y que desde donde el cubo sea observado haya una armonía visual. Un último aspecto que ayuda a balancear la composición es el poder observar líneas paralelas a lo largo de todo el cubo.'
             },
             image3: {
-              title: 'Cubo 3',
-              description: 'Descripción del tercer cubo y su significado'
+              title: 'Cubo 3: Espacio Negativo',
+              description: 'Para este cubo busco presentar el espacio negativo como el punto focal de mi composición y no como algo complementario. Para lograr esto voy a agregar elementos por todo el cubo excepto en el centro, creando una especie de marco que le da énfasis al espacio en el centro. Al posicionar este espacio negativo en el centro el ojo se dirige automáticamente ahí. Este mismo espacio negativo es algo que presenta contraste, el cual también es representado con las distintas direcciones que siguen las líneas en la composición'
             },
             image4: {
-              title: 'Cubo 4',
-              description: 'Descripción del cuarto cubo y su significado'
+              title: 'Cubo 4: Soporte',
+              description: 'Después de trabajar bocetos a partir de mi definición para soporte se me ocurrió crear una composición que se soportará entre sí. Al discutir sobre soporte con mi grupo llegamos a la conclusión que el cubo puede ser soportado por la composición o la composición puede ser soportada por el cubo. Por lo tanto decidí no solo que los elementos se soportan entre sí, sino que también sean soportados por el cubo. El contraste en este cubo lo conseguimos con una diferencia entre direcciones y con espacio negativo y positivo, por último hay contraste entre las ligas estando completamente lisas en la parte exterior del cubo y una sobre la otra dentro de este.'
             },
             image5: {
-              title: 'Cubo 5',
-              description: 'Descripción del quinto cubo y su significado'
+              title: 'Cubo 5: Tensión',
+              description: 'Para este cubo y los siguientes tres cambiamos de concepto, para estos cuatro cubos yo utilizaré la profundidad como concepto principal. Para este cubo de tensión decidí que la mejor forma de representarla visualmente sería crear un objeto con mi material (cinchos) y deformar este con pura tensión. Para lograr esto cree un cubo a partir de 12 cinchos completos, este cubo lo uni al cubo de metal con ayuda de otros 8 cinchos completamente tensados, esto logró deformar mi cubo lo suficiente como para que la tensión fuera visible. Como último detalle para trabajar la profundidad así como para tener una mejor composición, cree un cubo más pequeño el cual coloque en el centro de la composición, esta vez solo sostenido por dos cinchos en direcciones opuestas, así repre de forma textual la definición de tensión que saque, la cual fue: "la tensión se forma cuando dos fuerzas opuestas actúan sobre un objeto"'
             },
             image6: {
-              title: 'Cubo 6',
-              description: 'Descripción del sexto cubo y su significado'
+              title: 'Cubo 6: Profundidad',
+              description: 'Para este cubo al igual que en el pasado y los dos siguientes mi concepto personal es la profundidad, el mismo concepto designado para este sexto cubo. En este cubo quiero representar la profundidad utilizando la distancia y la escala, esto generado a través de un túnel hecho de cuadrados que varían en tamaño, empezando por los más grandes a las orillas y los más pequeños al centro. Para hacer más claro el efecto de profundidad jugue con los límites del cubo, permitiendo que ciertos cuadrados salgan de esta así haciendo énfasis en la profundidad. Hacer que el túnel crezca desde el centro hacia ambos lados le agrega balance y estética a la composición. La disminución de tamaño en el centro obliga la profundidad del cubo a ser percibida desde cualquier ángulo, sea a través del túnel o desde afuera'
             },
             image7: {
-              title: 'Cubo 7',
-              description: 'Descripción del séptimo cubo y su significado'
+              title: 'Cubo 7: Contención',
+              description: 'Para este séptimo cubo en el que trabajamos contención yo busqué crear una composición en la que cierto objeto fuera libre y no estuviese sostenido. Pero que este estuviera contenido en un espacio delimitado. Para esto cree un cubo pequeño el cual coloque dentro de un cubo mas grande. Estos dos cubos están completamente cerrados y actuando como una jaula para aire y para el otro cubo respectivamente. Por último coloque estos dos cubos dentro de él de metal y este lo delimite con dos sets de cinchos, conteniendo así los dos cubos mas pequeños de una forma más minimalista. Utilizando 3 cubos de distintos tamaños y con espacio negativo trabaje también la profundidad en el cubo'
             },
             image8: {
-              title: 'Cubo 8',
-              description: 'Descripción del octavo cubo y su significado'
+              title: 'Cubo 8: Tema Libre',
+              description: 'Para este último cubo mi idea era crear una composición que tuviera un poco de todos los conceptos trabajados anteriormente, desde balance hasta contención. Este cubo lo trabaje con cinchos acomodados como estrella de 4 puntas, una en cada cara. Al terminar todas las caras aparte de ser una composición estética, se crea un juego visual en el que las formas aparentan ir hacia el centro del cubo.'
             }
           }
         },
@@ -192,39 +192,39 @@ export const translations = {
         },
         objectProject: {
           title: 'Cubes',
-          description: 'Object and Space',
+          description: 'A series of compositions created using rubber bands and cubes.',
           images: {
             image1: {
-              title: 'Cube 1',
-              description: 'Description of the first cube and its meaning'
+              title: 'Cube 1: Repetition',
+              description: 'Following the general concept of my first four cubes, which is contrast, I will create a composition using rubber bands in which I take advantage of the cube to demonstrate different forms of contrast, using repetition as a tool. To represent repetition, the entire composition will be created by arranging the rubber bands in a way that creates a pattern, either by placing parallel rubber bands on one face but contrasting in quantity and direction with rubber bands on the opposite face of the cube. On two other faces of the cube, I will create contrast by making curves with the rubber bands.'
             },
             image2: {
-              title: 'Cube 2',
-              description: 'Description of the second cube and its meaning'
+              title: 'Cube 2: Balanced Composition',
+              description: 'For this cube, I seek to create a balance between all faces without forgetting contrast. Using a minimalist approach, I can create a contrast between positive and negative space, while also creating a contrast between directions. To give balance to the composition, I will ensure that each face has exactly the same elements and that there is visual harmony from wherever the cube is observed. A final aspect that helps balance the composition is being able to observe parallel lines throughout the entire cube.'
             },
             image3: {
-              title: 'Cube 3',
-              description: 'Description of the third cube and its meaning'
+              title: 'Cube 3: Negative Space',
+              description: 'For this cube, I seek to present negative space as the focal point of my composition rather than as something complementary. To achieve this, I will add elements throughout the cube except in the center, creating a kind of frame that emphasizes the space in the center. By positioning this negative space in the center, the eye is automatically drawn there. This same negative space presents contrast, which is also represented by the different directions that the lines follow in the composition'
             },
             image4: {
-              title: 'Cube 4',
-              description: 'Description of the fourth cube and its meaning'
+              title: 'Cube 4: Support',
+              description: 'After working on sketches based on my definition of support, I came up with the idea of creating a composition that would support itself. When discussing support with my group, we concluded that the cube could be supported by the composition or the composition could be supported by the cube. Therefore, I decided that not only would the elements support each other, but they would also be supported by the cube. The contrast in this cube is achieved through differences in directions and through negative and positive space, and finally, there is contrast between the rubber bands being completely smooth on the exterior of the cube and overlapping each other inside it.'
             },
             image5: {
-              title: 'Cube 5',
-              description: 'Description of the fifth cube and its meaning'
+              title: 'Cube 5: Tension',
+              description: 'For this cube and the next three, we changed concepts. For these four cubes, I will use depth as the main concept. For this tension cube, I decided that the best way to represent it visually would be to create an object with my material (cable ties) and deform it with pure tension. To achieve this, I created a cube using 12 complete cable ties, which I attached to the metal cube using 8 more completely tensioned cable ties. This deformed my cube enough to make the tension visible. As a final detail to work on depth and to have a better composition, I created a smaller cube which I placed in the center of the composition, this time only supported by two cable ties in opposite directions, thus literally representing the definition of tension that I came up with: "tension is formed when two opposing forces act on an object"'
             },
             image6: {
-              title: 'Cube 6',
-              description: 'Description of the sixth cube and its meaning'
+              title: 'Cube 6: Depth',
+              description: 'For this cube, as with the previous and the next two, my personal concept is depth, the same concept designated for this sixth cube. In this cube, I want to represent depth using distance and scale, generated through a tunnel made of squares that vary in size, starting with the largest at the edges and the smallest in the center. To make the depth effect clearer, I played with the cube\'s boundaries, allowing certain squares to extend beyond it, thus emphasizing the depth. Making the tunnel grow from the center towards both sides adds balance and aesthetics to the composition. The decrease in size in the center forces the cube\'s depth to be perceived from any angle, whether through the tunnel or from the outside'
             },
             image7: {
-              title: 'Cube 7',
-              description: 'Description of the seventh cube and its meaning'
+              title: 'Cube 7: Containment',
+              description: 'For this seventh cube where we worked on containment, I sought to create a composition in which a certain object would be free and not supported. But this object would be contained within a delimited space. For this, I created a small cube which I placed inside a larger cube. These two cubes are completely closed and act as a cage for air and for the other cube respectively. Finally, I placed these two cubes inside the metal one and delimited it with two sets of cable ties, thus containing the two smaller cubes in a more minimalist way. Using 3 cubes of different sizes and with negative space, I also worked on depth in the cube'
             },
             image8: {
-              title: 'Cube 8',
-              description: 'Description of the eighth cube and its meaning'
+              title: 'Cube 8: Free Theme',
+              description: 'For this last cube, my idea was to create a composition that incorporated a bit of all the concepts worked on previously, from balance to containment. I worked on this cube with cable ties arranged as 4-pointed stars, one on each face. When all faces are completed, besides being an aesthetic composition, it creates a visual play where the forms appear to converge towards the center of the cube.'
             }
           }
         },

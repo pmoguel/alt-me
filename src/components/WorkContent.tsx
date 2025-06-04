@@ -51,8 +51,12 @@ export default function WorkContent() {
           </div>
         </a>
         <a href="/cubos" className="group relative overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105">
-          <div className="aspect-w-16 aspect-h-9 bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-            <span className="text-gray-600 dark:text-gray-400 text-lg font-semibold">Coming Soon</span>
+          <div className="aspect-w-16 aspect-h-9">
+            <img
+              src="/images/cubos/3.jpg"
+              alt={t.pages.work.objectProject.title}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="absolute inset-0 flex items-end p-6">
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-black/95 via-black/80 via-black/60 via-black/40 to-transparent backdrop-blur-[12px]"></div>
